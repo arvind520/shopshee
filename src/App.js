@@ -7,7 +7,9 @@ import ProductListing from './components/ProductListing';
 import Error404 from './components/Error404';
 
 function App() {
-  return (<>
+  return (
+    <div className="ui--container">
+
     <Router>
       <Header />
       <Routes>
@@ -16,7 +18,8 @@ function App() {
         <Route path='/*' element={<Error404 />} />
       </Routes>
     </Router>
-  </>
+  
+    </div>
   );
 }
 
